@@ -27,7 +27,7 @@ Frontend: React.js, Tailwind CSS
 
 1. Clone the repo:
    ```bash
-   git clone
+   git clone https://github.com/Harsh2073/Hommies.git
    cd Hommies
    ```
 
