@@ -25,6 +25,19 @@ Frontend: React.js, Tailwind CSS
 
 🛠 Installation
 
-```cmd
-git clone 
+1. Clone the repo:
+   ```bash
+   git clone
+   cd Hommies
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run Server
+   ```bash
+   npm run dev
+   ```
 
