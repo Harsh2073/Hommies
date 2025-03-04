@@ -5,9 +5,9 @@ A fully functional real estate web application built with ReactJS. Users can bro
 
 # 🚀 Features
 
-✅ Property listing creation, editing, and deletion
+✅ List properties with images, price, and details
 
-✅ Image upload and storage (Firebase Storage)
+✅  Search and filter properties
 
 ✅ Responsive design for mobile & desktop
 
