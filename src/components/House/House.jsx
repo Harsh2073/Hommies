@@ -1,4 +1,5 @@
 import {BiBed,BiBath,BiArea} from 'react-icons/bi'
+import PropTypes from 'prop-types';
 
 const House = ({ house }) => {
   const {image,type,country,address,bedrooms,bathrooms,surface,price}=house;
@@ -24,9 +25,21 @@ const House = ({ house }) => {
           <div>{surface}</div>
         </div>
       </div>
-      <div className='text-lg font-semibold text-violet-600 mb-4'>{price}</div>
+      <div className='text-lg font-semibold text-violet-600 mb-4'>Rs. {price}</div>
     </div>
   )
 }
+House.propTypes = {
+  house: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    bedrooms: PropTypes.number.isRequired,
+    bathrooms: PropTypes.number.isRequired,
+    surface: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default House

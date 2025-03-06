@@ -13,7 +13,7 @@ import SignUp from './components/Authentication/SignUp'
 
 function App() {
   return (
-    <div className='max-w-[1440px] mx-auto bg-white'>
+    <div className='max-w-[1920px] mx-auto bg-#F2EBF2'>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App
+    

@@ -14,7 +14,7 @@ const PropertyDetails = () => {
       <div className='container mx-auto min-h-[800px] mb-14'>
         <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between'>
           <div className='flex flex-col'>
-            <h2 className='text-2xl font-semibold'>{house.name}</h2>
+            <h2 className='text-2xl text-left font-semibold'>{house.name}</h2>
             <h3 className='text-lg mb-4'>{house.address}</h3>
           </div>
           <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm'>
@@ -28,7 +28,7 @@ const PropertyDetails = () => {
             <div className='mb-8'>
               <img src={house.imageLg}/>
             </div>
-            <div className='flex gap-x-6 text-violet-700 mb-6'>
+            <div className='flex justify-start gap-x-6 text-violet-700 mb-6'>
               <div className='flex gap-x-2 items-center'>
                 <BiBed className='text-2xl'/>
                 <div>{house.bedrooms}</div>

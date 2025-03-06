@@ -30,7 +30,7 @@ const HouseList = () => {
               </Link>
             )
           })}
-        </div>
+        </div>     
       </div>
     </section>
   )
