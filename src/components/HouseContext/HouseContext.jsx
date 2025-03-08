@@ -2,6 +2,7 @@ import { useState, useEffect, createContext } from "react";
 
 import { housesData } from "../../data";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const HouseContext = createContext();
 
 // eslint-disable-next-line react/prop-types
@@ -108,7 +109,6 @@ const HouseContextProvider = ({ children }) => {
         houses,
         loading,
         handleClick,
-        loading,
       }}
     >
       {children}
@@ -117,3 +117,4 @@ const HouseContextProvider = ({ children }) => {
 };
 
 export default HouseContextProvider;
+    

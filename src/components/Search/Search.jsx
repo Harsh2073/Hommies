@@ -10,7 +10,7 @@ import { HouseContext } from '../HouseContext/HouseContext';
 const Search = () => {
   const {handleClick} = useContext(HouseContext)
   return (
-    <div className='px-[30px] py-6 max-w-[1440px] flex flex-col mx-auto items-center lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-4 lg:shadow-1 bg-white lg:bg-transparent rounded-ld '>
+    <div className='px-[30px] py-6 max-w-[1170px] flex flex-col mx-auto items-center lg:flex-row justify-between gap-4 lg:gap-x-3 relative lg:-top-4 lg:shadow-1 bg-white lg:bg-transparent rounded-ld '>
       <CountryDropdown/>
       <PropertyDropdown/>
       <PriceRangeDropdown/>
