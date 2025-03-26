@@ -21,7 +21,7 @@ const PropertyDetails = () => {
             <div className='bg-green-500 text-white px-3 rounded-full'>{house.type}</div>
             <div className='bg-violet-500 text-white px-3 rounded-full'>{house.country}</div>
           </div>
-          <div className='text-3xl font-semibold text-violet-600'>$ {house.price}</div>
+          <div className='text-3xl font-semibold text-violet-600'>Rs. {house.price}</div>
         </div>
         <div className='flex flex-col items-start gap-8 lg:flex-row'>
           <div className='max-w-[768px]'>
@@ -42,7 +42,7 @@ const PropertyDetails = () => {
                 <div>{house.surface}</div>
               </div>
             </div>
-            <div>{house.description}</div>
+            <div className='text-left'>{house.description}</div>
           </div>
           <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8'>
             <div className='flex items-center gap-x-4 mb-8'>

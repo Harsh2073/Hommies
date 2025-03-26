@@ -12,7 +12,7 @@ const Header = () => {
         <div className='md:flex gap-10'>
           <Link className='transition text-2xl hover:bg-violet-900 hover:text-white hover:p-2 hover:rounded-lg' to='/'>Home</Link>
           <Link className='transition text-2xl hover:bg-violet-900 hover:text-white hover:p-2 hover:rounded-lg' to='/Homes'>Homes</Link>
-          <Link className='transition text-2xl hover:bg-violet-900 hover:text-white hover:p-2 hover:rounded-lg' to='/AgentList'>Agents</Link>
+          <Link className='transition text-2xl hover:bg-violet-900 hover:text-white hover:p-2 hover:rounded-lg' to='/Agents'>Agents</Link>
         </div> 
         <div className='flex justify-end items-center text-2xl w-auto gap-6'>
           <Link className='hover:text-violet-900 transition' to='/LogIn'>Log in</Link>
