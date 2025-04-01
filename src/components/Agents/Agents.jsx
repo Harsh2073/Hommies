@@ -7,7 +7,8 @@ const Agents = () => {
 
   // Filter agents based on search input
   const filteragents = agentsData.filter((agent) =>
-    agent.name.toLowerCase().includes(searchagent.toLowerCase())
+    agent.name.toLowerCase().includes(searchagent.toLowerCase()) ||
+    agent.role.toLowerCase().includes(searchagent.toLowerCase())
   );
 
   return (
@@ -36,15 +37,15 @@ const Agents = () => {
       <div className="text-left mb-4">
         <h2 className="text-xl font-bold text-gray-800">{agent.name}</h2>
         <hr className="my-2 border-gray-300" />
-        <p className="text-gray-600">Role:{agent.role}</p>
-        <p className="text-gray-500">Experience:{agent.experience}</p>
+        <p className="text-gray-600">Role: {agent.role}</p>
+        <p className="text-gray-600">Experience: {agent.experience}</p>
       </div>
       <div className="text-left mb-4">
         <p className="text-gray-600">Email: {agent.email}</p>
         <p className="text-gray-600">Phone: {agent.phone}</p>
       </div>
       <div className="flex gap-4 text-gray-500 text-xl">
-        <a href="#" className="hover:text-blue-600">
+        <a href="#" className="hover:text-pink-600">
           <FaInstagram />
         </a>
         <a href="#" className="hover:text-blue-800">
