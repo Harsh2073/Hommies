@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import beirut from '../../images/beirut.jpg'
-import tyre from '../../images/tyre.jpg'
-import keserwen from '../../images/keserwen.jpg'
-import Jounieh from '../../images/junieh.jpg'
-import Byblos from '../../images/byblos.jpg'
-import Chouf from '../../images/chouf.jpg'
-import Batroun from '../../images/batroun.jpg'
+import beirut from '../../../public/Images/beirut.jpg'
+import tyre from '../../../public/Images/tyre.jpg'
+import keserwen from '../../../public/Images/keserwen.jpg'
+import Jounieh from '../../../public/Images/jounieh.jpg'
+import Byblos from '../../../public/Images/byblos.jpg'
+import Chouf from '../../../public/Images/chouf.jpg'
+import Batroun from '../../../public/Images/batroun.jpg'
 
 const PropertySlider = () => {
   const propertyslider = [
