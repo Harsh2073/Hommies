@@ -74,6 +74,7 @@ export const housesData = [
       image: Agent1,
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
+      email:'PT@gmail.com'
     },
   },
   {
@@ -95,6 +96,7 @@ export const housesData = [
       image: Agent2,
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
+      email:'DH@gmail.com',
     },
   },
   {
@@ -116,6 +118,7 @@ export const housesData = [
       image: Agent3,
       name: 'Amado Smith',
       phone: '0123 456 78910',
+      email:'AS@gmail.com'
     },
   },
   {
@@ -137,6 +140,7 @@ export const housesData = [
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
+      email:'KG@gmail.com'
     },
   },
   {
@@ -158,6 +162,7 @@ export const housesData = [
       image: Agent5,
       name: 'Grover Robinson',
       phone: '0123 456 78910',
+      email:"GS@gmail.com"
     },
   },
   {
@@ -179,6 +184,7 @@ export const housesData = [
       image: Agent6,
       name: 'Karen Sorensen',
       phone: '0123 456 78910',
+      email:'KS@gmail.com'
     },
   },
   {
@@ -200,6 +206,7 @@ export const housesData = [
       image: Agent7,
       name: 'Jawhar Shamil Naser',
       phone: '0123 456 78910',
+      email:'JSN@gmail.com'
     },
   },
   {
@@ -221,6 +228,7 @@ export const housesData = [
       image: Agent8,
       name: 'Juana Douglass',
       phone: '0123 456 78910',
+      email:'JD@gmail.com'
     },
   },
   {
@@ -242,6 +250,7 @@ export const housesData = [
       image: Agent9,
       name: 'Jerry Schenck',
       phone: '0123 456 78910',
+      email:'JS@gmail.com'
     },
   },
   {
@@ -263,6 +272,7 @@ export const housesData = [
       image: Agent10,
       name: 'Vera Levesque',
       phone: '0123 456 78910',
+      email:'VL@gmail.com'
     },
   },
   {
@@ -284,6 +294,7 @@ export const housesData = [
       image: Agent11,
       name: 'Sofia Gomes',
       phone: '0123 456 78910',
+      email:'SG@gmail.com'
     },
   },
   {
@@ -305,6 +316,7 @@ export const housesData = [
       image: Agent12,
       name: 'Raymond Hood',
       phone: '0123 456 78910',
+      email:"RH@gmail.com"
     },
   },
   {
@@ -326,6 +338,7 @@ export const housesData = [
       image: Agent1,
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
+      email:'PT@gmail.com'
     },
   },
   {
@@ -347,6 +360,7 @@ export const housesData = [
       image: Agent2,
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
+      email:'DH@gmail.com'
     },
   },
   {
@@ -368,6 +382,7 @@ export const housesData = [
       image: Agent3,
       name: 'Amado Smith',
       phone: '0123 456 78910',
+      email:'AS@gmail.com'
     },
   },
   {
@@ -389,6 +404,7 @@ export const housesData = [
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
+      email:'KG@gmail.com'
     },
   },
   {
@@ -410,6 +426,7 @@ export const housesData = [
       image: Agent5,
       name: 'Grover Robinson',
       phone: '0123 456 78910',
+      email:'GB@gmail.com'
     },
   },
   {
@@ -431,8 +448,54 @@ export const housesData = [
       image: Agent6,
       name: 'Karen Sorensen',
       phone: '0123 456 78910',
+      email:'KS@gmail.com'
     },
   },
+  {
+    id: 19,
+    type: 'Upcoming',
+    name: 'Sky Heights',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+    image: Apartment2,
+    imageLg: Apartment2Lg,
+    country: 'Delhi',
+    address: 'Delhi',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '1200 sq ft',
+    year: '2010',
+    price: '38000',
+    agent: {
+      image: Agent6,
+      name: 'Karen Sorensen',
+      phone: '0123 456 78910',
+      email:'KS@gmail.com'
+    },
+  },
+  {
+    id: 20,
+    type: 'Upcoming',
+    name: 'Sky Heights',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+    image: Apartment2,
+    imageLg: Apartment2Lg,
+    country: 'Ahmedabad',
+    address: 'Ahmedabad',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '1200 sq ft',
+    year: '2010',
+    price: '38000',
+    agent: {
+      image: Agent5,
+      name: 'Grover Robinson',
+      phone: '0123 456 78910',
+      email:'GB@gmail.com'
+    },
+  },
+
 ];
 export const agentsData = [
     {

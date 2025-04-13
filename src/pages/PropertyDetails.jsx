@@ -1,78 +1,183 @@
-import { housesData} from '../data';
-import {useParams} from 'react-router-dom';
-import {BiBed,BiBath,BiArea} from 'react-icons/bi'
-import {Link} from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom"; // ⬅️ Added useNavigate
+import { useSelector } from "react-redux";
+import { BiBed, BiBath, BiArea } from "react-icons/bi";
+import { GiPositionMarker } from "react-icons/gi";
+import { MdCurrencyRupee } from "react-icons/md";
+import { BsHouseDoor } from "react-icons/bs";
+import PropTypes from "prop-types";
 
-const PropertyDetails = () => {
-  const {id} = useParams();
-  const house=housesData.find(house=>{
-    return house.id === parseInt(id);
-  });
+const PropertyDetails = ({ onFetch }) => {
+  const { id } = useParams();
+  const navigate = useNavigate(); // ⬅️ useNavigate hook
+  const [selectedImage, setSelectedImage] = useState("");
+  const selectedProperty = useSelector((state) => state.property.selectedProperty);
+  const isAuth = useSelector((state) => state.auth.isAuth);
+
+  useEffect(() => {
+    if (onFetch && id) onFetch(id);
+  }, [id, onFetch]);
+
+  useEffect(() => {
+    if (selectedProperty?.images?.length) {
+      setSelectedImage(selectedProperty.images[0].url || selectedProperty.images[0]);
+    }
+  }, [selectedProperty]);
+
+  if (!selectedProperty) {
+    return (
+      <div className="p-10 text-center text-red-500 text-xl font-semibold">
+        Property not found.
+      </div>
+    );
+  }
+
+  const {
+    title, address, city, state, country, zipCode,
+    area, bedrooms, bathrooms, price, listed_date,
+    listed_by, images = [], description,
+    availableType, propertyStatus, property_type, features
+  } = selectedProperty;
 
   return (
-    <section>
-      <div className='container mx-auto min-h-[800px] mb-14'>
-        <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between'>
-          <div className='flex flex-col'>
-            <h2 className='text-2xl text-left font-semibold'>{house.name}</h2>
-            <h3 className='text-lg mb-4'>{house.address}</h3>
-          </div>
-          <div className='mb-4 lg:mb-0 flex gap-x-2 text-sm'>
-            <div className='bg-green-500 text-white px-3 rounded-full'>{house.type}</div>
-            <div className='bg-violet-500 text-white px-3 rounded-full'>{house.country}</div>
-          </div>
-          <div className='text-3xl font-semibold text-violet-600'>Rs. {house.price}</div>
+    <section className="bg-gradient-to-br from-violet-50 to-white p-6 md:p-12 min-h-screen">
+      <div className="max-w-7xl mx-auto space-y-10">
+
+        {/* Back Button */}
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-violet-600 text-white px-4 py-2 rounded hover:bg-violet-700 transition mb-4"
+        >
+          ← Go Back
+        </button>
+
+        {/* Title & Location */}
+        <div>
+          <h1 className="text-4xl font-extrabold text-violet-800 mb-2">{title}</h1>
+          <p className="text-gray-600 flex items-center gap-2 text-lg">
+            <GiPositionMarker className="text-red-500" />
+            {`${address}, ${city}, ${state}, ${country} - ${zipCode}`}
+          </p>
         </div>
-        <div className='flex flex-col items-start gap-8 lg:flex-row'>
-          <div className='max-w-[768px]'>
-            <div className='mb-8'>
-              <img src={house.imageLg}/>
-            </div>
-            <div className='flex justify-start gap-x-6 text-violet-700 mb-6'>
-              <div className='flex gap-x-2 items-center'>
-                <BiBed className='text-2xl'/>
-                <div>{house.bedrooms}</div>
-              </div>
-              <div className='flex gap-x-2 items-center'>
-                <BiBath className='text-2xl'/>
-                <div>{house.bathrooms}</div>
-              </div>
-              <div className='flex gap-x-2 items-center'>
-                <BiArea className='text-2xl'/>
-                <div>{house.surface}</div>
-              </div>
-            </div>
-            <div className='text-left'>{house.description}</div>
+        {/* Image Gallery */}
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Thumbnails */}
+          <div className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-y-auto lg:max-h-[450px]">
+            {images.map((img, idx) => {
+              const url = img.url || img;
+              return (
+                <img
+                  key={idx}
+                  src={url}
+                  onClick={() => setSelectedImage(url)}
+                  className={`w-20 h-20 object-cover rounded-md border-2 cursor-pointer ${selectedImage === url ? "border-violet-600" : "border-gray-200"
+                    }`}
+                  alt={`Thumbnail ${idx + 1}`}
+                />
+              );
+            })}
           </div>
-          <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8'>
-            <div className='flex items-center gap-x-4 mb-8'>
-              <div className='w-20 h-20 p-1 border border-gray-300 rounded-full'>
-                <img src={house.agent.image}/>
-              </div>
+
+          {/* Main Image */}
+          <div className="w-full">
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="w-full h-[400px] object-cover rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+
+        {/* Property Info Card */}
+        <div className="bg-white rounded-xl shadow-lg p-6 space-y-6">
+          {/* Badges */}
+          <div className="flex flex-wrap gap-3 text-sm font-medium">
+            <span className="inline-flex items-center bg-green-100 text-green-800 px-3 py-1 rounded-full">
+              <span className="font-semibold mr-1">Availability:</span> {availableType}
+            </span>
+            <span className={`inline-flex items-center ${propertyStatus === "available"
+                ? "bg-emerald-100 text-emerald-800"
+                : "bg-red-100 text-red-800"
+              } px-3 py-1 rounded-full`}>
+              <span className="font-semibold mr-1">Status:</span> {propertyStatus}
+            </span>
+            <span className="inline-flex items-center bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">
+              <span className="font-semibold mr-1">Type:</span> {property_type}
+            </span>
+          </div>
+
+          {/* Property Details Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-violet-900">
+            <div className="flex items-center gap-2 text-lg">
+              <BiBed /> {bedrooms} Beds
+            </div>
+            <div className="flex items-center gap-2 text-lg">
+              <BiBath /> {bathrooms} Baths
+            </div>
+            <div className="flex items-center gap-2 text-lg">
+              <BiArea /> {area} sqft
+            </div>
+            <div className="flex items-center gap-2 text-xl font-bold text-green-700">
+              <MdCurrencyRupee /> {price.toLocaleString()}
+            </div>
+          </div>
+          <p className="text-sm text-gray-500">Listed on: {new Date(listed_date).toLocaleDateString()}</p>
+        </div>
+
+        {/* Agent Info (Authenticated Users Only) */}
+        {isAuth && listed_by && (
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h2 className="text-xl font-bold text-violet-700 mb-4">Listed By</h2>
+            <div className="flex items-center gap-4">
+              <img
+                src={listed_by.profile_image?.url}
+                alt={listed_by.name}
+                className="w-16 h-16 rounded-full border-2 border-violet-300 object-cover"
+              />
               <div>
-                <div className='font-bold text-lg'>{house.agent.name}</div>
-                <Link to='' className='text-violet-700 text-sm'>View Listings</Link>
+                <p className="text-lg font-bold uppercase">{listed_by.name}</p>
+                <p className="text-sm text-gray-500">{listed_by.email}</p>
               </div>
             </div>
-            <form className='flex flex-col gap-y-4'>
-              <input 
-              className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Name*'/>
-              <input 
-              className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Email*'/>
-              <input 
-              className='border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm' type='text' placeholder='Phone*'/>
-              <textarea className='border border-gray-300 focis:border-violet-700 outline:none rounded w-full p-4 h-36 text-sm text-gray-400'placeholder='Message*'
-              defaultValue='Hello, I am interested in[Modern apartment]'></textarea>
-              <div className='flex gap-x-2'>
-                <button className='bg-violet-700 hover:bg-violet-800 text-white rounded p-4 text-sm w-full transition '>Send message</button>
-                <button className='border border-violet-700 hover:border-violet-500 hover:text-violet-500 rounded p-4 text-sm w-full transition'>Call</button>
-              </div>
-            </form>
           </div>
+        )}
+
+        {/* Features */}
+        {features?.length > 0 && (
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h2 className="text-2xl font-bold text-violet-700 mb-4">Features & Amenities</h2>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
+              {features.map((feature, index) => (
+                <li key={index} className="bg-violet-100 text-violet-800 px-3 py-2 rounded shadow flex items-center gap-2">
+                  <BsHouseDoor /> {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Description */}
+        <div className="bg-white rounded-xl shadow-lg p-6">
+          <h2 className="text-2xl font-bold text-violet-700 mb-4">About This Property</h2>
+          {isAuth ? (
+            <p className="text-gray-700 leading-relaxed">{description}</p>
+          ) : (
+            <p className="text-red-500 font-semibold text-center">
+              Please{" "}
+              <Link to="/login" className="underline text-violet-700">
+                login
+              </Link>{" "}
+              to view the full property description.
+            </p>
+          )}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PropertyDetails
+PropertyDetails.propTypes = {
+  onFetch: PropTypes.func.isRequired,
+};
+
+export default PropertyDetails;
