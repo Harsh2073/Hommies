@@ -328,7 +328,7 @@ const Profile = ({ onGetProperties, onUpdateProfile, onDeleteProperty }) => {
                       </button>
 
                       <button
-                        onClick={handleDeleteProperty(property._id)}
+                        onClick={() => handleDeleteProperty(property._id)}
                         className="text-red-600 hover:underline text-sm flex items-center gap-1"
                       >
                         <FaTrashAlt /> Delete

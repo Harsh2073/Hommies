@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaInstagram, FaFacebook, FaTwitter, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaUserTie, FaInfoCircle } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaUserTie } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
 
@@ -53,11 +53,11 @@ const Agents = ({ onGetAgents }) => {
               <p className="flex items-center gap-2"><FaEnvelope className="text-violet-500" /> {agent.email}</p>
               <p className="flex items-center gap-2"><FaPhoneAlt className="text-violet-500" /> {agent.phone}</p>
               <p className="flex items-center gap-2"><FaMapMarkerAlt className="text-violet-500" /> {agent.location}</p>
-              <p className="flex items-center gap-2"><FaInfoCircle className="text-violet-500" /> {agent.about || "No bio provided"}</p>
+              
             </div>
 
             {agent.agent_details && (
-              <div className="mt-4 text-sm text-gray-600 border-t pt-4 space-y-1">
+              <div className="mt-4 text-sm text-left text-gray-600 border-t pt-4 space-y-1">
                 <p><strong>Experience:</strong> {agent.agent_details.experience} years</p>
                 <p><strong>Specialty:</strong> {agent.agent_details.specialty}</p>
               </div>

@@ -43,7 +43,7 @@ const House = ({ properties }) => {
         <p className="text-gray-500 text-sm line-clamp-2">{description}</p>
 
         <div className="mt-2 text-gray-600 text-sm">
-          <div className="flex items-center gap-2 mb-1">
+          <div className="flex items-center text-left gap-2 mb-1">
             <BiMap className="text-violet-500" />
             <span>{`${address}, ${city}, ${state} ${zipCode}`}</span>
           </div>

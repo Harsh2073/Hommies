@@ -21,7 +21,7 @@ const Banner = () => {
           </motion.h1>
 
           <p className="text-lg text-gray-700 max-w-2xl">
-            Your gateway to the property market. Whether you're ready to buy your dream home, sell your current one, or explore recent market trends, we offer expert guidance, a wide selection of properties, and a secure platform. We believe real estate is more than a transaction — it's about realizing dreams and securing futures.
+            Your gateway to the property market. Whether you&apos;re ready to buy your dream home, sell your current one, or explore recent market trends, we offer expert guidance, a wide selection of properties, and a secure platform. We believe real estate is more than a transaction — it&apos;s about realizing dreams and securing futures.
           </p>
 
           {/* Stats */}
@@ -66,7 +66,7 @@ const Banner = () => {
           transition={{ duration: 1 }}
         >
           <img
-            className="max-w-full h-auto object-cover rounded-lg shadow-lg"
+            className="max-w-full h-auto object-cover rounded-lg"
             src={Image}
             alt="Real Estate Preview"
           />

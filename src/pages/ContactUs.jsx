@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import {  toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -25,10 +25,14 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         {/* Contact Form */}
         <div className="bg-white/80 backdrop-blur shadow-lg rounded-3xl p-10">
-          <h2 className="text-4xl font-bold text-violet-800 mb-8">Let’s Connect</h2>
+          <h2 className="text-4xl font-bold text-violet-800 mb-8">
+            Let’s Connect
+          </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Your Name</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Your Name
+              </label>
               <input
                 type="text"
                 name="name"
@@ -39,7 +43,9 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Your Email</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Your Email
+              </label>
               <input
                 type="email"
                 name="email"
@@ -50,7 +56,9 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Subject</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Subject
+              </label>
               <input
                 type="text"
                 name="subject"
@@ -61,7 +69,9 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Message</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Message
+              </label>
               <textarea
                 name="message"
                 rows="5"
@@ -85,26 +95,27 @@ const Contact = () => {
           <div className="bg-white shadow-xl rounded-3xl p-10 space-y-6">
             <h2 className="text-4xl font-bold text-gray-800">Contact Info</h2>
             <p className="text-gray-600">
-              We’re here to answer any questions. Reach out to us and we’ll respond as soon as we can.
+              We’re here to answer any questions. Reach out to us and we’ll
+              respond as soon as we can.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-gray-700">
                 <div className="bg-violet-100 p-3 rounded-full">
                   <FaMapMarkerAlt className="text-violet-700 text-lg" />
                 </div>
-                <span>123 Dream Street, Pune, Maharashtra, India</span>
+                <span>Ahmedabd</span>
               </div>
               <div className="flex items-center gap-4 text-gray-700">
                 <div className="bg-violet-100 p-3 rounded-full">
                   <FaPhone className="text-violet-700 text-lg" />
                 </div>
-                <span>+91 9876543210</span>
+                <span>+91 9687631716</span>
               </div>
               <div className="flex items-center gap-4 text-gray-700">
                 <div className="bg-violet-100 p-3 rounded-full">
                   <FaEnvelope className="text-violet-700 text-lg" />
                 </div>
-                <span>support@myworld.com</span>
+                <span>shommies@gmail.com</span>
               </div>
             </div>
           </div>
@@ -113,7 +124,7 @@ const Contact = () => {
           <div className="mt-8 rounded-2xl overflow-hidden shadow-xl">
             <iframe
               title="Company Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609818804!2d73.7228791664877!3d18.524616065035236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfab205a1f8d%3A0xc05f2cbf8af0b75a!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1649682141671!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14736.994590232792!2d72.55864365!3d23.03051345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f56e6b6f33%3A0x2e8b2fc3c7b4b35!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1713173370000!5m2!1sen!2sin"
               width="100%"
               height="250"
               allowFullScreen=""
