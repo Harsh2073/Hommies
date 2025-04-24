@@ -43,10 +43,6 @@ This Real Estate Application provides a platform for users to buy, sell, and ren
   - 🔑 JWT (Authentication)
   - ☁️Cloudinary (Image)
 
-- **Deployment**:
-  - 🚀 Heroku (Hosting)
-  - 💻 GitHub (Version Control)
-
 ## ⚙️ Installation
 
 ### 📌 Prerequisites
