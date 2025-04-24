@@ -7,6 +7,7 @@ A full-featured Real Estate Application that allows users to browse, search, and
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Screenshot](#screenshot)
 - [Installation](#installation)
 - [Usage](#usage)
 
@@ -40,6 +41,14 @@ This Real Estate Application provides a platform for users to buy, sell, and ren
   - 🗃️ MongoDB (Database)
   - 🔑 JWT (Authentication)
   - ☁️Cloudinary (Image)
+ 
+## 📷 Screenshot
+
+![Screenshot 2025-04-15 131401](https://github.com/user-attachments/assets/3b4c3d51-8bd7-4c0f-98ec-8055fb319e1b)
+![Screenshot 2025-04-15 131454](https://github.com/user-attachments/assets/807d1015-0600-4892-8833-40f6b190e5d7)
+![Screenshot 2025-04-15 132656](https://github.com/user-attachments/assets/51040a64-9bdb-4203-bbb9-fee770e86a51)
+![Screenshot 2025-04-15 132109](https://github.com/user-attachments/assets/a5055aaa-b19e-40e3-a276-63244f4c519c)
+![Screenshot 2025-04-15 132715](https://github.com/user-attachments/assets/a16db301-493f-408c-8733-36d327f6058f)
 
 ## ⚙️ Installation
 
