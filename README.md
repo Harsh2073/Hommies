@@ -9,8 +9,6 @@ A full-featured Real Estate Application that allows users to browse, search, and
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 📝 Introduction
 
