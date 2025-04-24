@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import HouseList from '../HouseList/HouseList';
 import PropTypes from 'prop-types';
@@ -171,3 +172,18 @@ Property.propTypes = {
 };
 
 export default Property;
+=======
+import Search from '../Search/Search'
+import HouseList from '../HouseList/HouseList'
+
+const Property = () => {
+  return (
+    <div className='h-full my-12'>
+        <Search/>
+        <HouseList/>
+    </div>
+  )
+}
+
+export default Property
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5

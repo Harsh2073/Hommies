@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+<<<<<<< HEAD
     "@react-google-maps/api": "^2.20.6",
     "@reduxjs/toolkit": "^2.6.1",
     "@tailwindcss/vite": "^4.0.7",
@@ -18,15 +19,23 @@
     "dotenv": "^16.4.7",
     "framer-motion": "^12.6.3",
     "js-cookie": "^3.0.5",
+=======
+    "@tailwindcss/vite": "^4.0.7",
+    "framer-motion": "^12.6.3",
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-image-gallery": "^1.4.0",
     "react-redux": "^9.2.0",
     "react-toastify": "^11.0.5",
     "tailwindcss": "^4.0.7",
     "use-places-autocomplete": "^4.0.1"
+=======
+    "tailwindcss": "^4.0.7"
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-6">
@@ -22,3 +23,16 @@ const Footer = () => {
 };
 
 export default Footer;
+=======
+
+
+const Footer = () => {
+  return (
+    <footer className="bg-black py-8 text-white">
+      <div className="container mx-auto">Copyright &copy; 2022. All rights reserved</div>
+    </footer>
+  )
+}
+
+export default Footer
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5

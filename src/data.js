@@ -74,7 +74,10 @@ export const housesData = [
       image: Agent1,
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'PT@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -96,7 +99,10 @@ export const housesData = [
       image: Agent2,
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'DH@gmail.com',
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -118,7 +124,10 @@ export const housesData = [
       image: Agent3,
       name: 'Amado Smith',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'AS@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -140,7 +149,10 @@ export const housesData = [
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'KG@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -162,7 +174,10 @@ export const housesData = [
       image: Agent5,
       name: 'Grover Robinson',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:"GS@gmail.com"
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -184,7 +199,10 @@ export const housesData = [
       image: Agent6,
       name: 'Karen Sorensen',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'KS@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -206,7 +224,10 @@ export const housesData = [
       image: Agent7,
       name: 'Jawhar Shamil Naser',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'JSN@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -228,7 +249,10 @@ export const housesData = [
       image: Agent8,
       name: 'Juana Douglass',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'JD@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -250,7 +274,10 @@ export const housesData = [
       image: Agent9,
       name: 'Jerry Schenck',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'JS@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -272,7 +299,10 @@ export const housesData = [
       image: Agent10,
       name: 'Vera Levesque',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'VL@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -294,7 +324,10 @@ export const housesData = [
       image: Agent11,
       name: 'Sofia Gomes',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'SG@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -316,7 +349,10 @@ export const housesData = [
       image: Agent12,
       name: 'Raymond Hood',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:"RH@gmail.com"
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -338,7 +374,10 @@ export const housesData = [
       image: Agent1,
       name: 'Patricia Tullert',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'PT@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -360,7 +399,10 @@ export const housesData = [
       image: Agent2,
       name: 'Daryl Hawker',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'DH@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -382,7 +424,10 @@ export const housesData = [
       image: Agent3,
       name: 'Amado Smith',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'AS@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -404,7 +449,10 @@ export const housesData = [
       image: Agent4,
       name: 'Kaitlyn Gonzalez',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'KG@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -426,7 +474,10 @@ export const housesData = [
       image: Agent5,
       name: 'Grover Robinson',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'GB@gmail.com'
+=======
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
     },
   },
   {
@@ -448,6 +499,7 @@ export const housesData = [
       image: Agent6,
       name: 'Karen Sorensen',
       phone: '0123 456 78910',
+<<<<<<< HEAD
       email:'KS@gmail.com'
     },
   },
@@ -496,6 +548,10 @@ export const housesData = [
     },
   },
 
+=======
+    },
+  },
+>>>>>>> 7e3eb3ee3f3ee147be5e7ccac56531f820c645b5
 ];
 export const agentsData = [
     {
