@@ -69,7 +69,8 @@ Before you begin, ensure you have the following installed:
    cd backend
    npm install
 
-5.Configure environment variables in both frontend and backend:
+5. Configure environment variables in both frontend and backend:
+   
   Create a .env file in the server directory and set the following variables:
   ```bash
   MONGO_URI=your_mongodb_connection_string
@@ -80,7 +81,8 @@ Before you begin, ensure you have the following installed:
   ```
   For the frontend, update API endpoints.
   
-6.Start the application:
+6. Start the application:
+   
   For Frontend:
   ```bash
   npm run dev
