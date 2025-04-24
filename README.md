@@ -41,6 +41,7 @@ This Real Estate Application provides a platform for users to buy, sell, and ren
   - 🛠️ Express.js (Web framework)
   - 🗃️ MongoDB (Database)
   - 🔑 JWT (Authentication)
+  - ☁️Cloudinary (Image)
 
 - **Deployment**:
   - 🚀 Heroku (Hosting)
@@ -79,6 +80,9 @@ Before you begin, ensure you have the following installed:
   ```bash
   MONGO_URI=your_mongodb_connection_string
   JWT_SECRET=your_jwt_secret_key
+  CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+  CLOUDINARY_API_KEY=your_cloudinary_api_key
+  CLOUDINARY_API_SECRET=your_cloudinary_api_secret
   ```
   For the frontend, update API endpoints.
   
@@ -96,14 +100,14 @@ Before you begin, ensure you have the following installed:
 
 Once the application is up and running:
 
--Register/Login: Users can sign up or log in using the authentication system.
+- Register/Login: Users can sign up or log in using the authentication system.
 
--Browse Properties: View available properties by browsing the listings.
+- Browse Properties: View available properties by browsing the listings.
 
--Advanced Search: Use the search filters to find properties based on preferences.
+- Advanced Search: Use the search filters to find properties based on preferences.
 
--Property Details: View detailed property information by clicking on a property card.
+- Property Details: View detailed property information by clicking on a property card.
 
--Manage Listings: Sellers can add, edit, or remove properties from their dashboard.
+- Manage Listings: Sellers can add, edit, or remove properties from their dashboard.
 
--Contact Sellers: Buyers can contact sellers through a form provided on the property detail page.
+- Contact Sellers: Buyers can contact sellers through a form provided on the property detail page.
